@@ -1,13 +1,14 @@
 def caesar(text, posun):
     abece = "abcdefghijklmnopqrstuvwxyz"
     vysledok = ""
+    
 
     for znak in text:
 
-        if znak in abeceda:
+        if znak in abece:
             index=abece.index(znak)
             novy_index=(index+posun) % 26
-            vysledok += abeceda[novy_index]
+            vysledok += abece[novy_index]
         else:
             vysledok+=znak
     return vysledok
